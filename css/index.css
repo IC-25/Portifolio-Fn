@@ -131,6 +131,11 @@ button[type="submit"]:hover{
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
+    transition: transform 0.5s;
+}
+.header-left-icons img:hover{
+    transform: translateY(-5px);
+    background-color: #333333;
 }
 .headerProfile{
     display: flex;
@@ -177,14 +182,27 @@ button[type="submit"]:hover{
         margin: 0 auto;
     }
     .NavBar ul{
-        display: none;
-        gap: 4px;
-        list-style: none;
+        /* background-color: #62381F; */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 7cm;
+        padding-top: 50px;
+
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+    }
+    .NavBar ul li{
+        display: block;
+        margin: 2px;
     }
     .NavBar img{
-        width: 6%;
+        width: 70px;
         cursor: pointer;
         display: block;
+        height: 70px;
     }
     .header-container{
         display: flex;
@@ -229,13 +247,32 @@ button[type="submit"]:hover{
         width: var(--width-sm);
         margin: 0 auto;
     }
-    .NavBar ul{
+    /* .NavBar ul{
         display: none;
         gap: 4px;
         list-style: none;
+    } */
+    .NavBar ul{
+        /* background-color: #62381F; */
+        position: fixed;
+        top: 0;
+        /* right: 10rem; */
+        width: 140px;
+        height: 5cm;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
     }
+    .NavBar ul li{
+        display: block;
+        margin: 2px;
+        
+    }
+  
     .NavBar img{
-        width: 6%;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
         display: block;
     }

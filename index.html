@@ -12,7 +12,7 @@
 
     <nav class="container NavBar">
         <h1>INNOCENT</h1>
-        <ul>
+        <ul id="sidemenu" >
             <li> <a href="#">Home</a> </li>
             <li> <a href="#about">About</a> </li>
             <li> <a href="#service">Service</a> </li>
@@ -20,9 +20,10 @@
             <li> <a href="#blog">Blog</a> </li>
             <li> <a href="#test">Testimoniols</a> </li>
             <li> <a href="#contact">Contact</a> </li>
+            <img src="assets/loc-removebg-preview.png"onclick="closemenu()">
         </ul>
         <!-- <div class="humbger"> -->
-            <img src="assets/menu.png" alt="">
+            <img src="assets/menu.png" onclick="openmenu()" >
         <!-- </div> -->
     </nav>
 
@@ -240,6 +241,17 @@
             <p>&copy;IC-25</p>
         </div>
     </section>
+
+    <script>
+
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-750px";
+        }
+    </script>
     
 </body>
 </html>
