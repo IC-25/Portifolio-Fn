@@ -187,7 +187,7 @@ button[type="submit"]:hover{
         top: 0;
         right: 0;
         width: 200px;
-        height: 7cm;
+        /* height: 7cm; */
         padding-top: 50px;
 
         display: flex;
@@ -199,11 +199,21 @@ button[type="submit"]:hover{
         margin: 2px;
     }
     .NavBar img{
-        width: 70px;
+        width: 50px;
         cursor: pointer;
         display: block;
-        height: 70px;
+        height: 50px;
     }
+    .closelogo{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 2px;
+        cursor: pointer;
+        margin-top: -23px;
+        margin-left: 64px;
+        background-color: #62381F;
+    } 
     .header-container{
         display: flex;
         flex-direction: column-reverse;
@@ -269,7 +279,15 @@ button[type="submit"]:hover{
         margin: 2px;
         
     }
-  
+    .closelogo{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        margin-top: -15px;
+        margin-left: 66px;
+        background-color: #62381F;
+    }
     .NavBar img{
         width: 30px;
         height: 30px;
@@ -552,19 +570,20 @@ button[type="submit"]:hover{
 
 }
 .contactLeft{
-    background: #62381F;
+    background: rgb(75, 2, 2);
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
+    color: white;
   
 }
 .contactLeft img{
-    width: 30%;
+    width: 20%;
+    border-radius: 30px;
 }
-form{
-    width: 5cm;
-}
+
 .form h1{
     margin-bottom: 1rem;
 }
@@ -594,7 +613,7 @@ label{
     color: aliceblue;
 }
 form button{
-    width: 62%;
+    width: 300px;
     height: 35px;
     margin-top: 1rem;
     border: none;
@@ -616,6 +635,9 @@ form button{
 .coicon img{
     width: 10%;
     margin-left: 5rem;
+}
+.newbutton{
+    color: white;
 }
 
 
@@ -652,6 +674,7 @@ form button{
         font-size: 1.4rem;
         font-weight: bolder;
     }
+    
     .footer{
         display: flex;
         flex-direction: column-reverse;
@@ -707,13 +730,13 @@ form button{
         height: 100px;
     }
     #footer{
-        background-color: #62381F;
+        background-color: rgb(75, 2, 2);
         height: 20vh;
     }
 }
 /* ====================== Foooooter ============= */
 #footer{
-    background-color: #62381F;
+    background-color: rgb(75, 2, 2);
     height: 16vh;
 }
 .footer{
@@ -721,4 +744,5 @@ form button{
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    color: white;
 }
