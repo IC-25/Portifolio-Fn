@@ -62,7 +62,11 @@ body{
     top: 0;
     justify-content: space-between;
     height: 50px;
-
+    z-index: 0;
+    position: fixed;
+    margin-left: 135px;
+    background-color:#1F2235;
+    margin-right: 4;
 }
 nav h1{
     color: red;
@@ -210,8 +214,8 @@ button[type="submit"]:hover{
         left: 25px;
         width: 2px;
         cursor: pointer;
-        margin-top: -23px;
-        margin-left: 64px;
+        margin-top: -25px;
+        margin-left: 2px;
         background-color: #62381F;
     } 
     .header-container{
@@ -415,6 +419,16 @@ button[type="submit"]:hover{
         width: 40%;
         border-radius: 50%;
     }
+    .closelogo{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 2px;
+        cursor: pointer;
+        margin-top: -15px;
+        margin-left: 46px;
+        background-color: #62381F;
+    } 
     
 }
 /* ===================== Services ===================== */
@@ -559,6 +573,9 @@ button[type="submit"]:hover{
         color: var(--colo-p);
         margin-top: 1rem;
         text-align: center;
+    }
+    .ul .closelogo img{
+        margin-left: -10px;
     }
 }
 /* ================== Contact ====================== */
